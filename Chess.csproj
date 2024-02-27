@@ -1,0 +1,111 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Images\king-black-text.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\BackGrounds\Background Board.png" />
+    <None Remove="Images\BackGrounds\ChessBoard - Background.png" />
+    <None Remove="Images\BackGrounds\Home - BackGround.png" />
+    <None Remove="Images\ChessPieces\bishop - black - text.png" />
+    <None Remove="Images\ChessPieces\bishop - black.png" />
+    <None Remove="Images\ChessPieces\bishop - white - text.png" />
+    <None Remove="Images\ChessPieces\bishop - white.png" />
+    <None Remove="Images\ChessPieces\king - black - text.png" />
+    <None Remove="Images\ChessPieces\king - black.png" />
+    <None Remove="Images\ChessPieces\king - white - text.png" />
+    <None Remove="Images\ChessPieces\king - white.png" />
+    <None Remove="Images\ChessPieces\knight - black - text.png" />
+    <None Remove="Images\ChessPieces\knight - black.png" />
+    <None Remove="Images\ChessPieces\knight - white - text.png" />
+    <None Remove="Images\ChessPieces\knight - white.png" />
+    <None Remove="Images\ChessPieces\pawn - black - text.png" />
+    <None Remove="Images\ChessPieces\pawn - black.png" />
+    <None Remove="Images\ChessPieces\pawn - white - text.png" />
+    <None Remove="Images\ChessPieces\pawn - white.png" />
+    <None Remove="Images\ChessPieces\queen - black - text.png" />
+    <None Remove="Images\ChessPieces\queen - black.png" />
+    <None Remove="Images\ChessPieces\queen - white - text.png" />
+    <None Remove="Images\ChessPieces\queen - white.png" />
+    <None Remove="Images\ChessPieces\rook - black - text.png" />
+    <None Remove="Images\ChessPieces\rook - black.png" />
+    <None Remove="Images\ChessPieces\rook - white - text.png" />
+    <None Remove="Images\ChessPieces\rook - white.png" />
+    <None Remove="Images\Icons\AIHead.png" />
+    <None Remove="Images\Icons\head1.png" />
+    <None Remove="Images\Icons\head2.png" />
+    <None Remove="Images\Icons\Pause.png" />
+    <None Remove="Images\Icons\PlayerVSComputer.png" />
+    <None Remove="Images\Icons\PlayerVSPlayer.png" />
+    <None Remove="Images\king-black-text.ico" />
+    <None Remove="Images\Rectangle.png" />
+    <None Remove="Screens\Chess - BackGround.png" />
+    <None Remove="Screens\ChessBoard - Background.png" />
+    <None Remove="Screens\Home - BackGround.png" />
+    <None Remove="Screens\Options - Background.png" />
+    <None Remove="Screens\Start - Background.png" />
+    <None Remove="Sounds\ButtonClick.mp3" />
+    <None Remove="Sounds\ButtonClick.wav" />
+    <None Remove="Sounds\MovePiece.mp3" />
+    <None Remove="Sounds\MovePiece.wav" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Images\king-black-text.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\BackGrounds\Background Board.png" />
+    <Resource Include="Images\ChessPieces\bishop - black - text.png" />
+    <Resource Include="Images\ChessPieces\bishop - black.png" />
+    <Resource Include="Images\ChessPieces\bishop - white - text.png" />
+    <Resource Include="Images\ChessPieces\king - black - text.png" />
+    <Resource Include="Images\ChessPieces\king - black.png" />
+    <Resource Include="Images\ChessPieces\knight - black - text.png" />
+    <Resource Include="Images\ChessPieces\knight - black.png" />
+    <Resource Include="Images\ChessPieces\knight - white - text.png" />
+    <Resource Include="Images\ChessPieces\knight - white.png" />
+    <Resource Include="Images\ChessPieces\pawn - black - text.png" />
+    <Resource Include="Images\ChessPieces\pawn - black.png" />
+    <Resource Include="Images\ChessPieces\pawn - white - text.png" />
+    <Resource Include="Images\ChessPieces\pawn - white.png" />
+    <Resource Include="Images\ChessPieces\queen - black - text.png" />
+    <Resource Include="Images\ChessPieces\queen - black.png" />
+    <Resource Include="Images\ChessPieces\queen - white - text.png" />
+    <Resource Include="Images\ChessPieces\queen - white.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\BackGrounds\Home - BackGround.png" />
+    <Resource Include="Images\ChessPieces\bishop - white.png" />
+    <Resource Include="Images\ChessPieces\king - white - text.png" />
+    <Resource Include="Images\ChessPieces\king - white.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\ChessPieces\rook - black - text.png" />
+    <Resource Include="Images\ChessPieces\rook - black.png" />
+    <Resource Include="Images\ChessPieces\rook - white - text.png" />
+    <Resource Include="Images\ChessPieces\rook - white.png" />
+    <Resource Include="Images\Icons\AIHead.png" />
+    <Resource Include="Images\Icons\head1.png" />
+    <Resource Include="Images\Icons\head2.png" />
+    <Resource Include="Images\Icons\Pause.png" />
+    <Resource Include="Images\Icons\PlayerVSComputer.png" />
+    <Resource Include="Images\Icons\PlayerVSPlayer.png" />
+    <Resource Include="Images\king-black-text.ico" />
+    <Resource Include="Images\Rectangle.png" />
+    <Resource Include="Screens\Chess - BackGround.png" />
+    <Resource Include="Screens\ChessBoard - Background.png" />
+    <Resource Include="Screens\Home - BackGround.png" />
+    <Resource Include="Screens\Options - Background.png" />
+    <Resource Include="Screens\Start - Background.png" />
+    <Resource Include="Sounds\ButtonClick.wav" />
+    <Resource Include="Sounds\MovePiece.wav" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,167 @@
+﻿<Window x:Class="Chess.Screens.OptionsScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Chess.Screens"
+        mc:Ignorable="d"
+        Title="OptionsScreen" Height="600" Width="1000"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        WindowStyle="None">
+    <Window.Background>
+        <ImageBrush ImageSource="/Screens/Options - Background.png"/>
+    </Window.Background>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.45*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="0.3*"/>
+        </Grid.RowDefinitions>
+        <TextBlock 
+            Text="Options"
+            FontSize="65"
+            FontWeight="bold"
+            Foreground="White"
+            FontFamily="Imperator"
+            Margin="50, 70, 100, 0"
+            Grid.Row="0"
+            />
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+        </Grid>
+
+        <TextBlock
+            Grid.Row="1"
+            Text="Music:"
+            FontSize="35"
+            FontWeight="SemiBold"
+            Foreground="White"
+            FontFamily="inter"
+            Margin="119,55,767,254"
+            />
+        <StackPanel 
+            x:Name="Music_Panel"
+            Grid.Row="1" Orientation="Horizontal" Height="50" 
+            Margin="335,53,335,240">
+            <Button
+                x:Name="MusicOnButton"
+                Content="On"
+                Width="100" Height="36"
+                Foreground="White"
+                FontSize="20"
+                FontFamily="Google Sans"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Left"
+                Style="{StaticResource Buttons}"
+                Click="MusicOnButton_Click"
+                />
+            <Button
+                x:Name="MusicOffButton"
+                Content="Off"
+                Width="100" Height="36"
+                Foreground="White"
+                FontSize="20"
+                FontFamily="Google Sans"
+                Margin="120, 0, 0, 0"
+                Style="{StaticResource Buttons}"
+                Click="MusicOffButton_Click"
+                />
+        </StackPanel>
+
+        <TextBlock
+            Grid.Row="1"
+            Text="Sounds:"
+            FontSize="35"
+            FontWeight="SemiBold"
+            Foreground="White"
+            FontFamily="inter"
+            Margin="95,155,772,141"
+            />
+        <StackPanel 
+            x:Name="Sounds_Panel"
+            Grid.Row="1" Orientation="Horizontal" Height="50" 
+            Margin="335,156,335,137">
+            <Button
+                x:Name="SoundsOnButton"
+                Content="On"
+                Width="100" Height="36"
+                Foreground="White"
+                FontSize="20"
+                FontFamily="Google Sans"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Left"
+                Style="{StaticResource Buttons}"
+                Click="SoundsOnButton_Click"
+                />
+            <Button
+                x:Name="SoundsOffButton"
+                Width="100" Height="36"
+                Content="Off"
+                Foreground="White"
+                FontSize="20"
+                FontFamily="Google Sans"
+                Margin="120, 0, 0, 0"
+                Style="{StaticResource Buttons}"
+                Click="SoundsOffButton_Click"/>
+        </StackPanel>
+
+        <TextBlock
+            Grid.Row="1"
+            Text="Difficulty:"
+            FontSize="35"
+            FontWeight="SemiBold"
+            Foreground="White"
+            FontFamily="inter"
+            Margin="68,255,767,49"
+            />
+        <StackPanel
+            x:Name="Difficulty_Panel"
+            Grid.Row="1" Orientation="Horizontal" Height="50" 
+            Margin="335,254,335,39"
+            >
+            <Button                
+                x:Name="EasyButton"
+                Width="100" Height="36"
+                Content="Easy"
+                Foreground="White"
+                FontSize="20"
+                FontFamily="Google Sans"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Left"
+                Style="{StaticResource Buttons}"
+                Click="EasyButton_Click"/>
+
+            <Button                
+                x:Name="MediumButton"
+                Width="100" Height="36"
+                Content="Medium"
+                Foreground="White"
+                FontSize="20"
+                FontFamily="Google Sans"
+                Margin="120, 0, 0, 0"
+                Style="{StaticResource Buttons}"
+                Click="MediumButton_Click"/>
+        </StackPanel>
+
+        <Button
+            x:Name="BackButton"
+            Content="Back"
+            Width="200" Height="56"
+            Foreground="White"
+            FontSize="30"
+            FontFamily="Google Sans"
+            HorizontalAlignment="Left"
+            Grid.Row="2"
+            Margin="30, 0, 0, 0"
+            Style="{StaticResource Buttons}"
+            Click="BackButton_Click"
+                    />
+    </Grid>
+</Window>
